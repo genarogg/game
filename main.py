@@ -178,7 +178,7 @@ class Mundo():
             pantalla.blit(bloque[0], bloque[1])
 
 
-
+from src.Jugador import Jugador
 
 
 jugador = Jugador(100, alto_pantalla - 130)
@@ -197,7 +197,8 @@ grupo_monedas.add(moneda_puntaje)
 if path.exists(f'level{nivel}_data'):
     pickle_in = open(f'level{nivel}_data', 'rb')
     datos_mundo = pickle.load(pickle_in)
-mundo = Mundo(datos_mundo)
+
+"""  """
 
 
 # Crea los botones
